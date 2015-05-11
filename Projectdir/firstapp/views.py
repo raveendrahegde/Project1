@@ -2,6 +2,9 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from models import ThingsToDo, ThingsNotToDo
 
+def home(request):
+	return render(request, "firstapp/homepage.html")
+
 def whatToDo(request):
 	toDo=ThingsToDo.objects.all()
 	context = {'todolist': toDo}
