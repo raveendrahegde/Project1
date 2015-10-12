@@ -3,7 +3,7 @@ from django.http import HttpResponse
 # Create your views here.
 
 def doLogin(request):
-	return HttpResponse('You are logged in')
+	return render(request, "firstapp/homepage.html")
 
 def doLogout(request):
-	return HttpResponse('You are logged out')
+	return render(request, "firstapp/loginpage.html")
