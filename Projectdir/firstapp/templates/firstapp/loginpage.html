@@ -1,11 +1,40 @@
 {% extends "firstapp/base.html" %}
 <meta>
 	<script type="text/javascript"></script>
+
 </meta>
 {% block content %}
-<h2>Welcome to Ravee's door</h2>
-<div id='logindiv'>
-	<a href='/login'><button type="button">Login</button></a>
+<div class="container">
+	<div id="loginbox">
+		<div id="signinbox">
+		<form class="form-signin" action="/login">
+		    <h3 class="form-signin-heading">Login with your {{ site_name }} ID</h3>
+		    <label for="inputEmail" class="sr-only">Email address</label>
+			    <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+		    <label for="inputPassword" class="sr-only">Password</label>
+		    <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+		    <div class="checkbox">
+		    <label>
+		        <input type="checkbox" value="remember-me"> Remember me
+		    </label>
+		    </div>
+		    <div id="login-btn-div">
+			    <button class="btn btn-lg btn-primary btn-block" type="submit" id="signin-btn">Sign in</button>
+			</div>
+		</form>
+		</div>
+		<div id="signupbox">
+			<h3>Sign-Up for {{ site_name }}</h3>
+			<div id="benefits">
+			<ul>
+			<li>Fantastic lottery wins</li>
+			<li>Mega million super lottos</li>
+			<li>CA Lotter is very good</li>
+			</ul>
+			<div id="signup-btn-div">
+				<button class="btn btn-lg btn-primary btn-block" type="submit" id="signup-btn">Sign Up</button></div>
+			</div>
+		</div>
+  	</div>
 </div>
-<br>
 {% endblock %}

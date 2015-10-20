@@ -1,0 +1,32 @@
+.mainpage
+{
+	background-color: grey;
+}
+
+#footer
+{
+	position:absolute;
+	bottom:0px;
+	left: 0px;
+    height:30px;
+    width:100%;
+    background-color:white;
+    border: solid;
+    border-width: 1px;
+    border-radius: 5px;
+
+}
+
+#footertext
+{
+	position:relative;
+	margin-top: 5px;
+	margin-left: 0px;
+	left: 30px;
+}
+
+#mainimg
+{
+	width: 60px;
+	height: 35px;
+}

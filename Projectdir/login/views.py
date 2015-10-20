@@ -1,9 +1,14 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from django.conf import settings
+from django.template import Context, RequestContext
 # Create your views here.
 
 def doLogin(request):
-	return render(request, "firstapp/homepage.html")
+	context = RequestContext(request, {'site_name': settings.SITE_NAME})
+	return render(context, "firstapp/homepage.html")
 
 def doLogout(request):
-	return render(request, "firstapp/loginpage.html")
+	print "CCC"
+	context = RequestContext(request, {'site_name': settings.SITE_NAME})
+	return render(context, "firstapp/loginpage.html")

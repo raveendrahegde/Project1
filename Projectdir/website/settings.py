@@ -83,4 +83,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
-STATIC_URL = '/static/'
+STATIC_URL = '/Users/ravee/Projects/Project1/Projectdir/firstapp/static/'
+
+#Ravee's stuff below
+SITE_NAME = 'LAVA'

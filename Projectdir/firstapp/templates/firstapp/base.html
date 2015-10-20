@@ -1,9 +1,37 @@
 {% load staticfiles %}
-<meta>
-	<script type="text/javascript"></script>
-</meta>
-<div id='header'>RAVEE</header>
-
-{% block content %}{% endblock %}
-
-<div id='footer'>FOOTER</dov>
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta>
+		<link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+			<link href="{% static 'css/signin.css' %}" rel="stylesheet">
+			<link href="{% static 'css/mystyle.css' %}" rel="stylesheet">
+			<script src="{% static 'js/bootstrap.min.js' %}"></script>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+			<script type="text/javascript"></script>
+			
+		</meta>
+	</head>
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#"><img id='mainimg' src="{% static 'img/greendot_large.jpeg' %}"></a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul hidden class="nav navbar-nav" id="menubar">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+	
+	{% block content %}{% endblock %}
+	
+	<div id='footer'>
+		<p id="footertext">Ravee @ 2015</p>
+	</div>
+<body>
