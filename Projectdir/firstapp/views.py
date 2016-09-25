@@ -15,7 +15,7 @@ def home(request):
 		return HttpResponse(rendered)'''
 
 		#Short way
-		return render_to_response("firstapp/loginpage.html", {'site_name': settings.SITE_NAME}, context_instance=RequestContext(request))
+		return render_to_response("market/loginpage.html", {'site_name': settings.SITE_NAME}, context_instance=RequestContext(request))
 	except Exception as e:
 		print "Error rendering login template - ", str(e)
 
@@ -23,9 +23,9 @@ def home(request):
 def whatToDo(request):
 	toDo=ThingsToDo.objects.all()
 	context = {'todolist': toDo}
-	return render(request,"firstapp/first.html",context)
+	return render(request,"market/first.html",context)
 
 def notToDo(request):
 	notToDo=ThingsNotToDo.objects.all()
 	context = {'notdolist': notToDo}
-	return render(request,"firstapp/second.html",context)
+	return render(request,"market/second.html",context)

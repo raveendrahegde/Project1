@@ -37,6 +37,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'firstapp',
+    'market',
     'login',
 )
 
@@ -83,7 +84,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
-STATIC_URL = '/Users/ravee/Projects/Project1/Projectdir/firstapp/static/'
+STATIC_URL = '/Users/ravee/Projects/Project1/Projectdir/market/static/'
 
 #Ravee's stuff below
 SITE_NAME = 'LAVA'

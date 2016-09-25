@@ -1,9 +1,14 @@
-{% extends "firstapp/base.html" %}
+{% extends "market/base.html" %}
 <meta>
 	<script type="text/javascript"></script>
 </meta>
 {% block content %}
-<h2>Welcome to Ravee's home</h2>
+<h2>Welcome to {{site_name}} home</h2>
+<div>
+	<a href="/valuate">Valuate your company</a>
+</div>
+
+<br>
 <div id="logoutdiv">
 	<a href='/logout'><button type="button">Logout</button></a>
 </div>
