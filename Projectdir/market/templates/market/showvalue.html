@@ -1,0 +1,9 @@
+{% extends "market/base.html" %}
+{% load humanize %}
+
+{% block content %}
+	<p>Value of {{company}} is "{{value|intcomma}}"</p>
+	<div>
+		<a href="/valuate">Valuate another company</a>
+	</div>
+{% endblock %}

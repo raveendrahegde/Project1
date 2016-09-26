@@ -81,4 +81,4 @@ fi
 
 #Added by Ravee
 export DYLD_LIBRARY_PATH=/usr/local/mysql/lib/:$DYLD_LIBRARY_PATH
-export PATH=$PATH:/usr/local/mysql/bin/
+export PATH=/usr/local/mysql/bin/:$PATH
