@@ -4,7 +4,9 @@
 	<div style="">
 	<form method="POST">
 		{% csrf_token %}
-		{{ dataform }}
+		<ul style="list-style: none;">
+			{{ dataform.as_ul }}
+		</ul>
 		<input type="submit" value="Calculate"/>
 	</form>
 	{{ dataform.errors }}
